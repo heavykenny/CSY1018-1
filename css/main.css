@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li a {
+    text-decoration: none;
+    display: block;
+    width: auto;
+    padding: 8px 16px;
+    color: #fff;
+}
+
+li a:hover {
+    background-color: #002828;
+}
+
+ul > li {
+    display: inline-block;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: teal;
+    color: #fff;
+}
+
+.logo {
+    font-size: 20px;
+    padding: 8px 16px;
+}
