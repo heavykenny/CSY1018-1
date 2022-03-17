@@ -64,3 +64,9 @@ nav {
 footer{
     text-align: center;
 }
+
+.tag-name img {
+    width: 250px;
+    height: 230px;
+    border-radius: 50%;
+}
