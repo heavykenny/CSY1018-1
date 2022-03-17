@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li a {
+    text-decoration: none;
+    display: block;
+    width: auto;
+    padding: 8px 16px;
+    color: #fff;
+}
+
+li a:hover {
+    background-color: #002828;
+}
+
+ul > li {
+    display: inline-block;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: teal;
+    color: #fff;
+}
+
+.logo {
+    font-size: 20px;
+    padding: 8px 16px;
+}
+
+.tag-name {
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    padding: 50px 0 10px 0;
+}
+
+.headline {
+    font-size: 25px;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.skills p {
+    padding: 10px;
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.skills ul {
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 20;
+}
+
+footer{
+    text-align: center;
+}
+
+.tag-name img {
+    width: 250px;
+    height: 230px;
+    border-radius: 50%;
+}
