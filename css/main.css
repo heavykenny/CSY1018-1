@@ -25,6 +25,7 @@ nav {
     padding: 20px;
     background-color: teal;
     color: #fff;
+    grid-area: nav;
 }
 
 .logo {
@@ -47,7 +48,7 @@ nav {
     padding: 10px;
 }
 
-.skills p {
+.headline-text {
     padding: 10px;
     font-size: 25px;
     text-align: center;
@@ -61,12 +62,51 @@ nav {
     font-weight: 20;
 }
 
-footer{
+footer {
     text-align: center;
+    grid-area: footer;
 }
 
 .tag-name img {
     width: 250px;
     height: 230px;
     border-radius: 50%;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: auto;
+    grid-template-areas:
+            "nav nav nav"
+            "main main main"
+            "footer footer footer";
+}
+
+main {
+    grid-area: main;
+}
+
+.portfolio-column-left {
+    width: 49.9%;
+    float: left;
+    background-color: #308f8f;
+    height: 500px;
+    border-radius: 10px;
+}
+
+.portfolio-column-right {
+    width: 49.9%;
+    float: right;
+    background-color: #308f8f;
+    height: 500px;
+    border-radius: 10px;
+}
+
+.portfolio {
+    font-size: 25px;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    color: white;
 }
