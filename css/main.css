@@ -110,3 +110,20 @@ main {
     margin: 0 auto;
     color: white;
 }
+
+form {
+    display: grid;
+    /*width: 800px;*/
+    grid-template-columns: 20% 70%;
+    align-items: center;
+    grid-gap: 0.5em;
+}
+.submit {
+    grid-column: 2;
+}
+
+.contact-form {
+    width: 50%;
+    margin: 0 auto;
+    /*padding: 10px;*/
+}
