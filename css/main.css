@@ -81,6 +81,7 @@ body {
             "nav nav nav"
             "main main main"
             "footer footer footer";
+    font-family: 'Poppins', sans-serif;
 }
 
 main {
@@ -221,4 +222,28 @@ input[type=submit] {
 
 input[type=submit]:hover {
     background-color: #014242;
+}
+
+.blog_content {
+    width: 80%;
+    margin: 0 auto;
+    border:5px solid  #308f8f;
+    padding: 10px;
+    border-radius: 10px;
+    /*border:1px solid black;*/
+}
+
+.title {
+    font-size: 30px;
+    padding: 0 0 10px 0 ;
+}
+
+.story {
+    font-size: 20px;
+    padding: 3px;
+}
+
+.title > a {
+    text-decoration: none;
+    color: #002828;
 }
