@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-li a {
+.menu li a {
     text-decoration: none;
     display: block;
     width: auto;
@@ -11,11 +11,11 @@ li a {
     color: #fff;
 }
 
-li a:hover {
+.menu li a:hover {
     background-color: #002828;
 }
 
-ul > li {
+.menu ul > li {
     display: inline-block;
 }
 
@@ -109,4 +109,116 @@ main {
     width: 80%;
     margin: 0 auto;
     color: white;
+}
+
+.contact-form {
+    width: 50%;
+    margin: 0 auto;
+    /*padding: 10px;*/
+    font-size: 20px;
+
+}
+
+.contact-column-left {
+    width: 49.9%;
+    float: left;
+}
+
+.contact-column-right {
+    width: 49.9%;
+    float: right;
+}
+
+.contact {
+    width: 80%;
+    margin: 0 auto;
+    color: #008080;
+}
+
+.contact ul > li {
+    list-style: none;
+}
+
+.phone-icon {
+    background-image: url("../images/phone.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 40px;
+    padding: 20px 1px 20px 45px;
+}
+
+.email-icon {
+    background-image: url("../images/email.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 40px;
+    padding: 20px 1px 20px 45px;
+}
+
+.linkedin-icon {
+    background-image: url("../images/linkedin.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 40px;
+    padding: 20px 1px 20px 45px;
+}
+
+.twitter-icon {
+    background-image: url("../images/twitter.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 40px;
+    padding: 20px 1px 20px 45px;
+}
+
+.github-icon {
+    background-image: url("../images/github.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 40px;
+    padding: 20px 1px 20px 45px;
+}
+
+.contact li a {
+    text-decoration: none;
+    color: #008080;
+}
+
+.contact li a:hover {
+    background-color: #014242;
+}
+
+.contact-details {
+    font-size: 20px;
+}
+
+.contact-details p, .contact-form p {
+    font-size: 30px;
+    margin: 20px;
+    align-content: center;
+}
+
+input[type=email], input[type=text], textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #008080;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #008080;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #014242;
 }
