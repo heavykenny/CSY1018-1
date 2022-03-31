@@ -15,7 +15,7 @@
     background-color: #002828;
 }
 
-.menu ul > li {
+.skills ul > li, .menu ul > li {
     display: inline-block;
 }
 
