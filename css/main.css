@@ -1,6 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400&display=swap');
+
 * {
     margin: 0;
     padding: 0;
+}
+
+:root{
+    --white: #ffffffff;
+    --bisque: #ffe8d1ff;
+    --blue-munsell: #568ea3ff;
+    --light-cornflower-blue: #8ecae6ff;
+    --blue-green: #219ebcff;
+    --prussian-blue: #023047ff;
+    --selective-yellow: #ffb703ff;
+    --tangerine: #fb8500ff;
 }
 
 .menu li a {
@@ -8,11 +21,12 @@
     display: block;
     width: auto;
     padding: 8px 16px;
-    color: #fff;
+    color: var(--white);
 }
 
 .menu li a:hover {
-    background-color: #002828;
+    background-color: var(--light-cornflower-blue);
+    border-radius: 15px;
 }
 
 .skills ul > li, .menu ul > li {
@@ -23,8 +37,8 @@ nav {
     display: flex;
     justify-content: space-between;
     padding: 20px;
-    background-color: teal;
-    color: #fff;
+    background-color: var(--blue-munsell);
+    color: var(--light-cornflower-blue);
     grid-area: nav;
 }
 
@@ -82,7 +96,7 @@ body {
             "nav nav nav"
             "main main main"
             "footer footer footer";
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Rajdhani', sans-serif;
 }
 
 main {
@@ -92,7 +106,7 @@ main {
 .portfolio-column-left {
     width: 49.9%;
     float: left;
-    background-color: #308f8f;
+    background-color: var(--blue-munsell);
     height: 500px;
     border-radius: 10px;
 }
@@ -100,7 +114,7 @@ main {
 .portfolio-column-right {
     width: 49.9%;
     float: right;
-    background-color: #308f8f;
+    background-color: var(--blue-munsell);
     height: 500px;
     border-radius: 10px;
 }
@@ -110,7 +124,7 @@ main {
     text-align: center;
     width: 80%;
     margin: 0 auto;
-    color: white;
+    color: var(--white);
 }
 
 .contact-form {
@@ -134,7 +148,7 @@ main {
 .contact {
     width: 80%;
     margin: 0 auto;
-    color: #008080;
+    color: var(--blue-munsell);
 }
 
 .contact ul > li {
@@ -146,7 +160,7 @@ main {
     background-repeat: no-repeat;
     background-position: left;
     background-size: 40px;
-    padding: 20px 1px 20px 45px;
+    padding: 5px 1px 5px 45px;
 }
 
 .email-icon {
@@ -154,7 +168,7 @@ main {
     background-repeat: no-repeat;
     background-position: left;
     background-size: 40px;
-    padding: 20px 1px 20px 45px;
+    padding: 5px 1px 5px 45px;
 }
 
 .linkedin-icon {
@@ -162,7 +176,7 @@ main {
     background-repeat: no-repeat;
     background-position: left;
     background-size: 40px;
-    padding: 20px 1px 20px 45px;
+    padding: 5px 1px 5px 45px;
 }
 
 .twitter-icon {
@@ -170,7 +184,7 @@ main {
     background-repeat: no-repeat;
     background-position: left;
     background-size: 40px;
-    padding: 20px 1px 20px 45px;
+    padding: 5px 1px 5px 45px;
 }
 
 .github-icon {
@@ -178,16 +192,20 @@ main {
     background-repeat: no-repeat;
     background-position: left;
     background-size: 40px;
-    padding: 20px 1px 20px 45px;
+    padding: 5px 1px 5px 45px;
 }
 
 .contact li a {
     text-decoration: none;
-    color: #008080;
+    color: var(--blue-munsell);
+    display: block;
+    padding: 10px 0 10px 10px;
+    width: 40%;
 }
 
 .contact li a:hover {
-    background-color: #014242;
+    background-color: var(--light-cornflower-blue);
+    border-radius: 14px;
 }
 
 .contact-details {
@@ -197,7 +215,7 @@ main {
 .contact-details p, .contact-form p {
     font-size: 30px;
     margin: 20px;
-    align-content: center;
+    text-align: center;
 }
 
 input[type=email], input[type=text], textarea {
@@ -205,15 +223,15 @@ input[type=email], input[type=text], textarea {
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
-    border: 1px solid #008080;
+    border: 1px solid var(--blue-munsell);
     border-radius: 4px;
     box-sizing: border-box;
 }
 
 input[type=submit] {
     width: 100%;
-    background-color: #008080;
-    color: white;
+    background-color: var(--blue-munsell);
+    color: var(--white);
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
@@ -222,13 +240,13 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-    background-color: #014242;
+    background-color: var(--blue-munsell);
 }
 
 .blog_content {
     width: 80%;
     margin: 10px auto;
-    border: 5px solid #308f8f;
+    border: 5px solid var(--blue-munsell);
     padding: 10px;
     border-radius: 10px;
 }
@@ -245,5 +263,5 @@ input[type=submit]:hover {
 
 .title > a {
     text-decoration: none;
-    color: #002828;
+    color: var(--blue-munsell);
 }
