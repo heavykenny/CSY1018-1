@@ -253,12 +253,19 @@ input[type=submit]:hover {
 
 .title {
     font-size: 30px;
-    padding: 0 0 10px 0 ;
+}
+
+.text-hover:hover {
+    background-color: var(--light-cornflower-blue);
+    border-radius: 7px;
+    padding: 2px;
+    color: var(--white);
 }
 
 .story {
     font-size: 20px;
     padding: 10px 0 0 0;
+    width: auto;
 }
 
 .title > a {
