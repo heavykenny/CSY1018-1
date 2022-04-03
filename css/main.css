@@ -29,8 +29,13 @@
     border-radius: 15px;
 }
 
-.skills ul > li, .menu ul > li {
+.skills ul > li, .menu ul > li, footer ul > li {
     display: inline-block;
+}
+
+footer ul > li > a > img {
+    width: 40px;
+    border-radius: 10px;
 }
 
 nav {
@@ -103,20 +108,26 @@ main {
     grid-area: main;
 }
 
-.portfolio-column-left {
-    width: 49.9%;
+.portfolio-column {
     float: left;
-    background-color: var(--blue-munsell);
+    width: 23%;
+    padding: 10px 10px 20px 10px;
     height: 500px;
+    background-color: var(--blue-munsell);
     border-radius: 10px;
+    margin: 2px;
 }
 
-.portfolio-column-right {
-    width: 49.9%;
-    float: right;
-    background-color: var(--blue-munsell);
-    height: 500px;
+.portfolio-column img {
+    width: 100%;
+}
+
+.portfolio-column span {
+    font-size: 20px;
+    display: block;
+    border: 1px solid var(--prussian-blue);
     border-radius: 10px;
+    padding: 10px;
 }
 
 .portfolio {
@@ -130,19 +141,13 @@ main {
 .contact-form {
     width: 50%;
     margin: 0 auto;
-    /*padding: 10px;*/
     font-size: 20px;
-
 }
 
-.contact-column-left {
-    width: 49.9%;
+.contact-column {
     float: left;
-}
-
-.contact-column-right {
-    width: 49.9%;
-    float: right;
+    width: 49%;
+    margin: 2px;
 }
 
 .contact {
@@ -200,7 +205,6 @@ main {
     color: var(--blue-munsell);
     display: block;
     padding: 10px 0 10px 10px;
-    width: 40%;
 }
 
 .contact li a:hover {
@@ -214,8 +218,14 @@ main {
 
 .contact-details p, .contact-form p {
     font-size: 30px;
-    margin: 20px;
+    margin: auto;
     text-align: center;
+}
+
+.contact-details-content {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
 }
 
 input[type=email], input[type=text], textarea {
@@ -271,4 +281,25 @@ input[type=submit]:hover {
 .title > a {
     text-decoration: none;
     color: var(--blue-munsell);
+}
+
+.site-report {
+    width: 80%;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.report-title {
+    font-size: 70px;
+}
+
+.site-report-body {
+    font-size: 20px;
+    padding: 10px 0 0 0;
+    width: 80%;
+    margin: auto;
+}
+
+.site-report-body p {
+    padding: 10px;
 }
