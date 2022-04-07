@@ -110,7 +110,7 @@ main {
 
 .portfolio-column {
     float: left;
-    width: 23%;
+    width: 22%;
     padding: 10px 10px 20px 10px;
     height: 500px;
     background-color: var(--blue-munsell);
