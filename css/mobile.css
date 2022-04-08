@@ -1,0 +1,82 @@
+@media only screen and (max-width: 600px) {
+    .logo {
+        display: none;
+    }
+
+    .menu ul > li {
+        display: block;
+    }
+
+    .hamburger-content-on {
+        padding-right: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        display: block;
+        background-color: var(--blue-munsell);
+        color: var(--light-cornflower-blue);
+    }
+
+    .on {
+        float: right;
+    }
+
+    .hamburger-content-off {
+        font-size: 20px;
+        display: block;
+        text-align: center;
+        background-color: white;
+        width: 50px;
+        margin: 10px;
+    }
+
+    .hamburger-content-off > a {
+        text-decoration: none;
+    }
+
+    .shownav {
+        width: 35px;
+        height: 5px;
+        background-color: white;
+        margin: 6px 0;
+    }
+
+    nav {
+        position: fixed;
+        left: 60%;
+        width: 40%;
+        height: 100vh;
+        grid-area: nav;
+        display: none;
+        top: 0;
+    }
+
+    body {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        grid-template-areas: "nav"
+        "main"
+        "footer";
+    }
+
+    #clicked .on {
+        display: block;
+    }
+
+    #clicked .off {
+        display: none;
+    }
+
+    #clicked:target .on {
+        display: none;
+    }
+
+    #clicked:target .off {
+        display: block;
+    }
+
+    #clicked:target nav {
+        display: block
+    }
+}
+

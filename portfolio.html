@@ -2,15 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-          name="viewport">
     <meta content="ie=edge" http-equiv="X-UA-Compatible">
     <link href="css/main.css" rel="stylesheet">
     <title>Portfolio</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="css/mobile.css" media="screen and (max-width: 1000px)"
+          rel="stylesheet"/>
 </head>
-<body>
+<body id="clicked">
+
+<div class="hamburger-content-on">
+    <a class="on" href="#clicked">
+        <div class="shownav"></div>
+        <div class="shownav"></div>
+        <div class="shownav"></div>
+    </a>
+</div>
+
 <nav>
     <div class="logo">KO</div>
+    <div class="hamburger-content-off">
+        <a class="off" href="#"> Close </a>
+    </div>
     <div class="menu">
         <ul>
             <li><a href="index.html">Home</a></li>
