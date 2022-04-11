@@ -1,10 +1,14 @@
 @media only screen and (max-width: 600px) {
     .logo {
-        display: none;
+        padding-left: 10px;
     }
 
     .menu ul > li {
         display: block;
+    }
+
+    .desktop-logo {
+        display: none;
     }
 
     .hamburger-content-on {
@@ -12,8 +16,8 @@
         padding-top: 10px;
         padding-bottom: 10px;
         display: block;
-        background-color: var(--blue-munsell);
-        color: var(--light-cornflower-blue);
+        background-color: var(--tangerine);
+        color: var(--selective-yellow);
     }
 
     .on {
@@ -78,5 +82,67 @@
     #clicked:target nav {
         display: block
     }
+
+    .title {
+        font-size: 20px;
+    }
+
+    .story {
+        font-size: 15px;
+    }
+
+    .contact-column {
+        width: 100%;
+    }
+
+    .contact li {
+        font-size: 15px;
+    }
+
+    .site-report-body {
+        font-size: 10px;
+    }
+
+    .report-title {
+        font-size: 30px;
+    }
+
+    .site-report-body p {
+        padding: 5px;
+        font-size: 15px;
+    }
+
+    .portfolio {
+        width: 90%;
+        margin: auto;
+    }
+
+    .contact-column img {
+        margin: 0;
+        width: 100%;
+    }
+}
+
+.tag-name {
+    font-size: 30px;
+}
+
+.headline {
+    font-size: 17px;
+    padding: 10px;
+}
+
+.portfolio-column {
+    width: 100%;
+    padding: 5px 5px 0 5px;
+    height: 400px;
+}
+
+.portfolio-column span {
+    font-size: 15px;
+}
+
+.portfolio-column p {
+    font-size: 18px;
 }
 

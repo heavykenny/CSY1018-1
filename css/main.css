@@ -8,9 +8,9 @@
 :root{
     --white: #ffffffff;
     --bisque: #ffe8d1ff;
-    --blue-munsell: #568ea3ff;
-    --light-cornflower-blue: #8ecae6ff;
-    --blue-green: #219ebcff;
+    --blue-munsell: #fa790c;
+    --light-cornflower-blue: #dbeaf8;
+    --blue-green: #ffb703ff;
     --prussian-blue: #023047ff;
     --selective-yellow: #ffb703ff;
     --tangerine: #fb8500ff;
@@ -25,7 +25,7 @@
 }
 
 .menu li a:hover {
-    background-color: var(--light-cornflower-blue);
+    background-color: var(--selective-yellow);
     border-radius: 15px;
 }
 
@@ -42,21 +42,30 @@ nav {
     display: flex;
     justify-content: space-between;
     padding: 20px;
-    background-color: var(--blue-munsell);
-    color: var(--light-cornflower-blue);
+    background-color: var(--tangerine);
+    color: var(--selective-yellow);
     grid-area: nav;
 }
 
 .logo {
     font-size: 20px;
-    padding: 8px 16px;
+}
+
+.logo img {
+    width: 35px;
+    height: 35px;
+    border-radius: 10px;
 }
 
 .tag-name {
     font-weight: bold;
     font-size: 40px;
     text-align: center;
-    padding: 40px 0 10px 0;
+    padding: 40px 0 0 0;
+}
+
+.job-title{
+    font-size: 20px;
 }
 
 .headline {
@@ -102,7 +111,18 @@ body {
             "main main main"
             "footer footer footer";
     font-family: 'Rajdhani', sans-serif;
+    background-color: #fff6e0;
 }
+
+.divider {
+    width: 80%;
+    margin: auto;
+}
+
+.divider:nth-child(2) {
+    background: var(--tangerine);
+}
+
 
 main {
     grid-area: main;
@@ -128,6 +148,8 @@ main {
     border: 1px solid var(--prussian-blue);
     border-radius: 10px;
     padding: 10px;
+    text-justify: inter-character;
+    text-align: justify;
 }
 
 .portfolio {
@@ -150,6 +172,12 @@ main {
     margin: 2px;
 }
 
+.contact-column img {
+    margin: 100px;
+    width: 80%;
+    border-radius: 10px;
+}
+
 .contact {
     width: 80%;
     margin: 0 auto;
@@ -160,46 +188,6 @@ main {
     list-style: none;
 }
 
-.phone-icon {
-    background-image: url("../images/phone.png");
-    background-repeat: no-repeat;
-    background-position: left;
-    background-size: 40px;
-    padding: 5px 1px 5px 45px;
-}
-
-.email-icon {
-    background-image: url("../images/email.png");
-    background-repeat: no-repeat;
-    background-position: left;
-    background-size: 40px;
-    padding: 5px 1px 5px 45px;
-}
-
-.linkedin-icon {
-    background-image: url("../images/linkedin.png");
-    background-repeat: no-repeat;
-    background-position: left;
-    background-size: 40px;
-    padding: 5px 1px 5px 45px;
-}
-
-.twitter-icon {
-    background-image: url("../images/twitter.png");
-    background-repeat: no-repeat;
-    background-position: left;
-    background-size: 40px;
-    padding: 5px 1px 5px 45px;
-}
-
-.github-icon {
-    background-image: url("../images/github.png");
-    background-repeat: no-repeat;
-    background-position: left;
-    background-size: 40px;
-    padding: 5px 1px 5px 45px;
-}
-
 .contact li a {
     text-decoration: none;
     color: var(--blue-munsell);
@@ -208,24 +196,8 @@ main {
 }
 
 .contact li a:hover {
-    background-color: var(--light-cornflower-blue);
+    background-color: var(--selective-yellow);
     border-radius: 14px;
-}
-
-.contact-details {
-    font-size: 20px;
-}
-
-.contact-details p, .contact-form p {
-    font-size: 30px;
-    margin: auto;
-    text-align: center;
-}
-
-.contact-details-content {
-    display: flex;
-    justify-content: center;
-    padding: 50px;
 }
 
 input[type=email], input[type=text], textarea {
@@ -266,7 +238,7 @@ input[type=submit]:hover {
 }
 
 .text-hover:hover {
-    background-color: var(--light-cornflower-blue);
+    background-color: var(--selective-yellow);
     border-radius: 7px;
     padding: 2px;
     color: var(--white);
@@ -276,6 +248,8 @@ input[type=submit]:hover {
     font-size: 20px;
     padding: 10px 0 0 0;
     width: auto;
+    text-justify: inter-character;
+    text-align: justify;
 }
 
 .title > a {
@@ -302,6 +276,8 @@ input[type=submit]:hover {
 
 .site-report-body p {
     padding: 10px;
+    text-justify: inter-character;
+    text-align: justify;
 }
 
 .off {
