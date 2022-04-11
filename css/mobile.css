@@ -1,10 +1,14 @@
 @media only screen and (max-width: 600px) {
     .logo {
-        display: none;
+        padding-left: 10px;
     }
 
     .menu ul > li {
         display: block;
+    }
+
+    .desktop-logo {
+        display: none;
     }
 
     .hamburger-content-on {
@@ -91,10 +95,6 @@
         width: 100%;
     }
 
-    .contact-details-content {
-        padding: 10px;
-    }
-
     .contact li {
         font-size: 15px;
     }
@@ -117,7 +117,10 @@
         margin: auto;
     }
 
-
+    .contact-column img {
+        margin: 0;
+        width: 100%;
+    }
 }
 
 .tag-name {
