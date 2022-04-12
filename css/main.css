@@ -5,12 +5,12 @@
     padding: 0;
 }
 
-:root{
+:root {
     --white: #ffffffff;
     --bisque: #ffe8d1ff;
     --blue-munsell: #fa790c;
     --light-cornflower-blue: #dbeaf8;
-    --blue-green: #ffb703ff;
+    --blue-green: #f8d281;
     --prussian-blue: #023047ff;
     --selective-yellow: #ffb703ff;
     --tangerine: #fb8500ff;
@@ -27,6 +27,53 @@
 .menu li a:hover {
     background-color: var(--selective-yellow);
     border-radius: 15px;
+    cursor: pointer;
+}
+
+.menu ul {
+    background: darkorange;
+    list-style: none;
+}
+
+.menu li {
+    color: #fff;
+    background: darkorange;
+    display: block;
+    padding: 10px;
+    position: relative;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+
+.menu ul li ul {
+    visibility: hidden;
+    position: absolute;
+    transition: all 0.5s ease;
+    left: 0;
+    display: none;
+}
+
+.menu ul li:hover > ul,
+.menu ul li ul:hover {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+
+main {
+    background: var(--blue-green);
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 80px;
+}
+
+main:hover {
+    background-color: var(--bisque);
+    cursor: pointer;
+    -webkit-transition: background-color 2s ease-out;
+    -moz-transition: background-color 2s ease-out;
+    -o-transition: background-color 2s ease-out;
+    transition: background-color 2s ease-out;
 }
 
 .skills ul > li, .menu ul > li, footer ul > li {
@@ -54,7 +101,8 @@ nav {
 .logo img {
     width: 35px;
     height: 35px;
-    border-radius: 10px;
+    border-radius: 15px;
+    padding: 10px;
 }
 
 .tag-name {
@@ -64,7 +112,7 @@ nav {
     padding: 40px 0 0 0;
 }
 
-.job-title{
+.job-title {
     font-size: 20px;
 }
 
@@ -78,9 +126,11 @@ nav {
 
 .headline-text {
     padding: 10px;
-    font-size: 25px;
+    font-size: 30px;
     text-align: center;
     font-weight: bold;
+    -webkit-animation: headline-text 0.8s linear both;
+    animation: headline-text 0.8s linear both;
 }
 
 .skills ul {
@@ -293,4 +343,32 @@ input[type=submit]:hover {
     margin: auto;
     width: 80%;
     border-radius: 10px;
+}
+
+@-webkit-keyframes headline-text {
+    0% {
+        letter-spacing: 1em;
+        opacity: 0;
+    }
+    40% {
+        opacity: 0.6;
+    }
+    100% {
+        letter-spacing: normal;
+        opacity: 1;
+    }
+}
+
+@keyframes headline-text {
+    0% {
+        letter-spacing: 1em;
+        opacity: 0;
+    }
+    40% {
+        opacity: 0.6;
+    }
+    100% {
+        letter-spacing: normal;
+        opacity: 1;
+    }
 }
