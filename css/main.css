@@ -324,7 +324,7 @@ input[type=submit]:hover {
     margin: auto;
 }
 
-.site-report-body p {
+.text-body {
     padding: 10px;
     text-justify: inter-character;
     text-align: justify;
@@ -342,7 +342,25 @@ input[type=submit]:hover {
     display: block;
     margin: auto;
     width: 80%;
-    border-radius: 10px;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.caption {
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    color: white;
+    border: thin silver solid;
+}
+
+figure {
+    width: 80%;
+    margin: 10px auto;
+    text-align: center;
+    font-style: italic;
+    border: thin silver solid;
+    color: white;
 }
 
 @-webkit-keyframes headline-text {
